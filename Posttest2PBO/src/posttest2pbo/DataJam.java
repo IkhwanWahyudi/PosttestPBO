@@ -16,19 +16,19 @@ public class DataJam {
     }
     
     // Getter ===================================================================
-    public String getNama(){return this.namaJam;}
+    public String getNama(){return namaJam;}
     
-    public String getMerk(){return this.merkJam;}
+    public String getMerk(){return merkJam;}
     
-    public String getTipe(){return this.tipeJam;}
+    public String getTipe(){return tipeJam;}
     
-    public String getKode(){return this.kodeJam;}
+    public String getKode(){return kodeJam;}
     
-    public String getWarna(){return this.warnaJam;}
+    public String getWarna(){return warnaJam;}
     
-    public int getHarga(){return this.hargaJam;}
+    public int getHarga(){return hargaJam;}
     
-    public int getStok(){return this.stokJam;}
+    public int getStok(){return stokJam;}
     
     // Setter ===================================================================
     public void SetEdit(String property, String NamaBaru, String KodeBaru, String MerkBaru, String TipeBaru, String WarnaBaru, int HargaBaru, int StokBaru){
