@@ -3,7 +3,7 @@ package posttest6pbo;
 public class Transaksi implements Profit{
     private String namaCustomer, namaBarang, merkBarang, kodeBarang, warnaBarang, fitur, Status;
     private int jumlahBarang, hargaBarang;
-    private double profit = 0;
+    private static double profit = 0;
 
     public Transaksi(String namaCustomer, String namaBarang, String merkBarang, 
             String kodeBarang, String warnaBarang, String fitur, String Status, int jumlahBarang, int hargaBarang) {
