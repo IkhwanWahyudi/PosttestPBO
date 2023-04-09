@@ -3,6 +3,7 @@ package posttest6pbo;
 public class Transaksi implements Profit{
     private String namaCustomer, namaBarang, merkBarang, kodeBarang, warnaBarang, fitur, Status;
     private int jumlahBarang, hargaBarang;
+    private double profit = 0;
 
     public Transaksi(String namaCustomer, String namaBarang, String merkBarang, 
             String kodeBarang, String warnaBarang, String fitur, String Status, int jumlahBarang, int hargaBarang) {
@@ -116,10 +117,9 @@ public class Transaksi implements Profit{
      */
     @Override
     public double TotalProfit() {
-        double satuan = 0;
         if (this.Status == "Sukses"){
-            satuan += jumlahBarang * hargaBarang;
+            profit += jumlahBarang * hargaBarang;
         }
-        return satuan;
+        return profit;
     }
 }
